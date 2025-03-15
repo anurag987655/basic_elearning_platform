@@ -1,0 +1,239 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    color: black; /* Updated to Black */
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    color: black; /* Updated to Black */
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #e6b800;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+/* Courses Section */
+.course-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    max-width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.course img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.course h3 {
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+/* Instructors Page */
+.instructors {
+    padding: 40px;
+    text-align: center;
+}
+
+.instructor-card {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.instructor-card:hover {
+    transform: scale(1.05);
+}
+
+.instructor-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.instructor-card h3 {
+    font-size: 22px;
+    color: #0056b3;
+}
+
+.instructor-card p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.social-link {
+    display: inline-block;
+    background-color: #0073b1;
+    color: white;
+    padding: 8px 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.social-link:hover {
+    background-color: #005682;
+}
+
+/* Contact Form */
+.contact-form form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #0056b3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #004494;
+}
+
+/* Footer */
+footer {
+    background-color: #003d82;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .course-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .instructor-card {
+        max-width: 90%;
+    }
+}
